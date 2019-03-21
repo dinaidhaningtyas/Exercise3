@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+<table border="1">
+<tr><th>Nama</th><th>rotation_period</th><th>orbital_period</th>
+    <th>climate</th><th>gravity</th><th>surface_water</th><th>population</th></tr>
+<tr><td id="test"></td><td id="test2"></td><td id="test3"></td><td id="test4"></td><td id="test5"></td>
+    <td id="test6"></td><td id="test7"></td>
+</tr>
+<script>
+    var data = "";
+        var myjson = '{  "name": "Alderaan", "rotation_period": "24", "orbital_period": "364","climate": "temperate", "gravity": "1 standard", "surface_water": "40", "population": "2000000000"}';
+        var obj = JSON.parse(myjson);
+        document.getElementById("test").innerHTML = obj.name;
+        document.getElementById("test2").innerHTML = obj.rotation_period;
+        document.getElementById("test3").innerHTML = obj.orbital_period;
+        document.getElementById("test4").innerHTML = obj.climate;
+        document.getElementById("test5").innerHTML = obj.gravity;
+        document.getElementById("test6").innerHTML = obj.surface_water;
+        document.getElementById("test7").innerHTML = obj.population;
+        </script>
+</table>
+</body>
+</html>
